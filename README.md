@@ -1,4 +1,3 @@
-## kmxy-wxapplet-evaluation
 
-评测评议小程序
+微信小程序
 
