@@ -1,0 +1,69 @@
+/* pages/userCenter/userCenter.wxss */
+
+.userinfo{
+  display: flex;
+  background: #ffffff;
+  justify-content: center;
+  margin-top: 80rpx;
+  margin-bottom: 16rpx;
+}
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  background-size: cover;
+}
+.userinfo-userdata{
+  display: flex;
+  justify-content: center;
+  font-size: 11pt;
+  margin-top: 10rpx;
+}
+.tool{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  border-top:1px solid #f3f3f3;
+  border-bottom:1px solid #f3f3f3;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  font-size: 12pt
+}
+.tool2{
+  display: flex;
+  align-items:center;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  font-size: 12pt
+}
+.image{
+  width: 50rpx;
+  height: 50rpx;
+  padding: 10rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+.image2{
+  display: flex;
+  justify-content:flex-end;
+  width: 30rpx;
+  height: 30rpx;
+  padding: 10rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+.navigator-hover {
+  color: blue;
+}
+
+open-data[type="userAvatarUrl"]{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
+

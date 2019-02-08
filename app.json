@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/auth/login/login",
+    "pages/evaluation/evaluation",
+    "pages/userCenter/userCenter",
+    "pages/homePage/homePage",
+    "pages/evaluationList/evaluationList",
+    "pages/chooseLib/chooseLib",
+    "pages/changePassword/changePassword",
+    "pages/userInfo/userInfo",
+    "pages/noticeAnnouncement/noticeAnnouncement",
+    "pages/auth/resetPassword/resetPassword",
+    "pages/noticeAnnouncementDetails/noticeAnnouncementDetails"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff8533",
+    "navigationBarTitleText": "评测评议",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#fafafa",
+    "borderStyle": "white",
+    "selectedColor": "#ff8533",
+    "color": "#666",
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "iconPath": "static/images/ic_menu_choice_nor.png",
+        "selectedIconPath": "static/images/ic_menu_choice_pressed.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/userCenter/userCenter",
+        "iconPath": "static/images/ic_menu_me_nor.png",
+        "selectedIconPath": "static/images/ic_menu_me_pressed.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

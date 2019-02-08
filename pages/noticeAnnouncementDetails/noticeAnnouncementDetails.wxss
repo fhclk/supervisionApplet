@@ -1,0 +1,54 @@
+/* pages/noticeAnnouncementDetails/noticeAnnouncementDetails.wxss */
+
+.main {
+  border: solid #e1e1e1 1px;
+  background-color: #fff;
+  flex: 1;
+  padding: 30rpx 24rpx 50rpx 24rpx;
+  margin: 20rpx;
+}
+
+.detailTitle {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: dotted #e1e1e1 1px;
+  border-color: #ccc;
+  margin-bottom: 10rpx;
+}
+
+.detailSubTitle {
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.detailContent {
+  border-top: dotted #cbcbcb 1px;
+  line-height: 21px;
+  margin-top: 8px;
+  padding-top: 14px;
+  padding-bottom: 18px;
+}
+
+.iconStyle {
+  width: 34rpx;
+  height: 34rpx;
+}
+
+.textRow {
+  padding-left: 10px;
+  color: #999;
+  font-size: 11pt;
+}
+
+.detailTitleText {
+  font-size: 14pt;
+  line-height: 30px;
+  color: #333;
+}
+
+.cont {
+  color: #666;
+  font-size: 11pt;
+}

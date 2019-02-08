@@ -1,0 +1,17 @@
+<!--pages/noticeAnnouncementDetails/noticeAnnouncementDetails.wxml-->
+<view class="main">
+  <view class='detailTitle'>
+    <text class='detailTitleText'>{{title}}</text>
+  </view>
+  <view class='detailSubTitle'>
+    <image src='../../static/images/noticedetailIcon2.jpg' class='iconStyle'></image>
+    <text class='textRow'>编辑部门：{{appendDept}}</text>
+  </view>
+  <view class='detailSubTitle'>
+    <image src='../../static/images/noticedetailIcon3.jpg' class='iconStyle'></image>
+    <text class='textRow'>发送时间：{{appendTime}}</text>
+  </view>
+  <view class='detailContent'>
+    <text class='cont'>{{content}}</text>
+  </view>
+</view>

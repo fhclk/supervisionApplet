@@ -1,0 +1,123 @@
+/* pages/evaluationList/evaluationList.wxss */
+
+.segment-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.segment-view .selected-item {
+  border-bottom: solid #ff8533 1px;
+  color: #ff8533;
+  transition: all 0.3s;
+}
+
+.segment-item {
+  flex: 1;
+  text-align: center;
+  line-height: 80rpx;
+  border-bottom: solid #dbdbdb 1px;
+}
+
+.content-view {
+  padding-top: 82rpx;
+  flex: 1;
+}
+
+swiper {
+  height: 100vh - 82rpx;
+}
+
+.evaluation-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+  border-bottom: solid #dbdbdb 1px;
+}
+
+.evaluation-item .title {
+  font-size: 13pt;
+}
+
+.evaluation-item .time {
+  font-size: 10pt;
+  color: #999;
+}
+
+.authon-code-view {
+  position: absolute;
+  top: 0rpx;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authon-code-view .main-view {
+  height: 350rpx;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-top: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 20rpx 10rpx 20rpx;
+}
+
+.authon-code-view .main-view > view {
+  margin: 10rpx 0 18rpx 0;
+}
+
+.authon-code-view .main-view > view:last-child {
+  margin-bottom: 0rpx;
+  margin-top: 20rpx;
+}
+
+.authon-code-view .title {
+  text-align: center;
+  font-size: 15pt;
+}
+
+.authon-code-view .tip-title {
+  text-align: center;
+  font-size: 12pt;
+  color: #999;
+}
+
+.authon-code-view .main-view .authon {
+  display: flex;
+  margin-bottom: 10rpx;
+  border: solid #dbdbdb 1px;
+  margin-top:30rpx;
+}
+
+.authon-code-view .main-view .authon input {
+  /* border: solid #dbdbdb 1px; */
+  height: 80rpx;
+  width: 60%;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  font-size: 13pt;
+}
+.authon-code-view .main-view .authon view {
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 13pt;
+  color: #fff;
+  background-color: #ff8533;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  width: 40%;
+}
+
+.has-send {
+  background-color: #dbdbdb !important;
+}

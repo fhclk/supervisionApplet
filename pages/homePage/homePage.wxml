@@ -1,0 +1,26 @@
+<!--pages/homePage/homePage.wxml-->
+<view class='container'>
+  <image src="{{bannerImgUrl}}" mode='widthFix' class="introduceinfo"></image>
+
+  <view class='select-btn-view' bindtap='gotoNotificationTap'>
+    <view>
+      <image src='../../static/images/message.png' class='item-icon'></image>
+      <view class='badge-view' wx:if="{{notificationNum > 0}}"><text>{{notificationNum}}</text></view>
+    </view>
+    <text>通知公告</text>
+    <view>
+      <image src='../../static/images/rightArrow.png' class='rightArrow'></image>
+    </view>
+  </view>
+
+  <view class='select-btn-view' bindtap='gotoEvaluationTap'>
+    <view>
+      <image src='../../static/images/fillData.png' class='item-icon'></image>
+      <view class='badge-view' wx:if="{{evaluationNum > 0}}"><text>{{evaluationNum}}</text></view>
+    </view>
+    <text>评测评议</text>
+    <view>
+      <image src='../../static/images/rightArrow.png' class='rightArrow'></image>
+    </view>
+  </view>
+</view>

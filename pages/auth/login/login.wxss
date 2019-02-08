@@ -1,0 +1,62 @@
+/* pages/auth/login/login.wxss */
+
+.container {
+  /* align-items: center; */
+}
+
+.logoview {
+  margin-top: 100rpx;
+  margin-bottom: 60rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoimg {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.logotitle {
+  margin-top: 30rpx;
+}
+
+.loginview {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  /* background-color: #bbb; */
+}
+
+.login-fill {
+  margin: 20rpx 18rpx;
+  padding: 16rpx 0;
+  border-bottom: solid #bbb 1px;
+  display: flex;
+  flex-direction: row;
+}
+
+.loginimg {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 14rpx;
+}
+
+.login-fill input {
+  font-size: 32rpx;
+  flex: 1;
+}
+
+.loginview button {
+  margin: 58rpx 18rpx 30rpx 18rpx;
+}
+
+.forget-password-view {
+  text-align: center;
+  font-size: 12pt;
+  color: #999;
+}
+
+.login-btn {
+  color: white;
+  background-color: #ff8533
+}

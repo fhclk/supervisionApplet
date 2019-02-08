@@ -1,0 +1,107 @@
+<view class='segment-view'>
+  <block wx:for="{{navbarTitle}}" wx:key="index">
+    <view class="segment-item {{navbarActiveIndex == index ? 'selected-item' : '' }}" bindtap='selectSegment' data-idx="{{index}}">
+      <text>{{item}}</text>
+    </view>
+  </block>
+</view>
+
+
+<view class="content-view">
+  <swiper current="{{navbarActiveIndex}}" bindanimationfinish="onBindAnimationFinish" style='height:{{contentHeight}}'>
+    <swiper-item>
+      <scroll-view scroll-y="{{true}}" 
+        style='height:{{contentHeight}}' 
+        bindscrolltoupper="scrolltoupper"
+        bindscrolltolower="scrolltolower">
+        <view class='list-item' wx:for="{{notReadNotifyList}}" 
+        bindtap='gotoDetailTap' data-notify-item='{{item}}' data-notify-index='{{index}}'>
+          <view class="title">
+            <image class="image" src="../../static/images/na-icon.png"></image>
+            <text class="text-class">{{item.title}}</text>
+          </view>
+
+          <view class="content">
+            <view class="content-dept">
+              <view class="dept-class">发表部门：
+                <text>{{item.appendDept}}</text>
+              </view>
+            </view>
+            <view class="content-dept">
+              <view class="dept-class">发表时间：
+                <text>{{item.appendTime}}</text>
+              </view>
+            </view>
+            <view class="content-detail">
+              <image class="image2" src="../../static/images/na-ion-text.png"></image>
+              <text class="text-class2">{{item.content}}</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <scroll-view scroll-y="{{true}}" 
+        style='height:{{contentHeight}}'
+        bindscrolltoupper="scrolltoupper"
+        bindscrolltolower="scrolltolower">
+        <view class='list-item' wx:for="{{hasReadNotifyList}}" 
+        bindtap='gotoDetailTap' data-notify-item='{{item}}'>
+          <view class="title">
+            <image class="image" src="../../static/images/na-icon.png"></image>
+            <text class="text-class">{{item.title}}</text>
+          </view>
+
+          <view class="content">
+            <view class="content-dept">
+              <view class="dept-class">发表部门：
+                <text>{{item.appendDept}}</text>
+              </view>
+            </view>
+            <view class="content-dept">
+              <view class="dept-class">发表时间：
+                <text>{{item.appendTime}}</text>
+              </view>
+            </view>
+            <view class="content-detail">
+              <image class="image2" src="../../static/images/na-ion-text.png"></image>
+              <text class="text-class2">{{item.content}}</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+    <swiper-item>
+      <scroll-view scroll-y="{{true}}" 
+        style='height:{{contentHeight}}' 
+        bindscrolltoupper="scrolltoupper"
+        bindscrolltolower="scrolltolower">
+        <view class='list-item' wx:for="{{myNotifyList}}" 
+        bindtap='gotoDetailTap' data-notify-item='{{item}}'>
+          <view class="title">
+            <image class="image" src="../../static/images/na-icon.png"></image>
+            <text class="text-class">{{item.title}}</text>
+          </view>
+
+          <view class="content">
+            <view class="content-dept">
+              <view class="dept-class">发表部门：
+                <text>{{item.appendDept}}</text>
+              </view>
+            </view>
+            <view class="content-dept">
+              <view class="dept-class">发表时间：
+                <text>{{item.appendTime}}</text>
+              </view>
+            </view>
+            <view class="content-detail">
+              <image class="image2" src="../../static/images/na-ion-text.png"></image>
+              <text class="text-class2">{{item.content}}</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>

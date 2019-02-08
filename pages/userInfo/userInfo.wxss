@@ -1,0 +1,27 @@
+page{
+  background: #efeff4;
+  padding-top: 20rpx;
+}
+
+.name{
+  padding: 20rpx;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  font-size: 11pt;
+  margin-bottom: 3rpx;
+}
+.form-input{
+  margin-left: 20rpx;
+  flex: 1;
+}
+.submit {
+  margin-top: 50rpx;
+  width: 80%;
+  background: #ff8533;
+  color: #fff;
+  font-size: 11pt;
+}
+.other-button-hover{
+  background-color: #ffffff;
+}

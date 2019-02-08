@@ -1,0 +1,99 @@
+
+
+.list-item {
+  background: #fff;
+  margin: 10rpx;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 11pt;
+  border-bottom: 2rpx solid #78A2FD;
+}
+
+.image {
+  width: 40rpx;
+  height: 40rpx;
+  padding: 10rpx;
+}
+
+.text-class {
+  width: 90%;
+  margin-left: 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content{
+  margin-top: 20rpx;
+  font-size: 11pt
+}
+
+.content-dept{
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx;
+}
+.dept-class{
+  padding-left: 20rpx;
+  margin-left: 10rpx;
+  border-left: 5rpx solid #EE8B32;
+}
+.content-detail{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 11pt;
+  padding-bottom:20rpx; 
+}
+.image2 {
+  width: 40rpx;
+  height: 30rpx;
+  padding: 10rpx;
+}
+.text-class2 {
+  width: 90%;
+  margin-left: 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2; 
+  display: -webkit-box; 
+ -webkit-box-orient: vertical; 
+}
+
+
+.segment-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.segment-view .selected-item {
+  border-bottom: solid #ff8533 1px;
+  color: #ff8533;
+  transition: all 0.3s;
+}
+
+.segment-item {
+  flex: 1;
+  text-align: center;
+  line-height: 80rpx;
+  border-bottom: solid #dbdbdb 1px;
+}
+
+.content-view {
+  padding-top: 82rpx;
+  flex: 1;
+}
+
+swiper {
+  height: 100vh - 82rpx;
+  background: #efeff4;
+}

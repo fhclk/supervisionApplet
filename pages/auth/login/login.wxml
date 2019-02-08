@@ -1,0 +1,20 @@
+<view class="container">
+  <view class='logoview'>
+    <image src="../../../static/images/logo.png" class='logoimg'></image>
+    <text class='logotitle'>{{moduleName}}</text>
+  </view>
+  <view class='loginview'>
+    <view class='login-fill'>
+      <image src='../../../static/images/account.png' class='loginimg'></image>
+      <input placeholder='请输入账号' type="number" bindinput="bindUserAccountInput"></input>
+    </view>
+    <view class='login-fill'>
+      <image src='../../../static/images/password.png' class='loginimg'></image>
+      <input placeholder='请输入密码' password type='text' bindinput="bindUserPasswordInput">></input>
+    </view>
+    <button  size="default" class='login-btn' bindtap="loginTap">
+      登录
+    </button>
+    <view class='forget-password-view' bindtap='retrievePassrodTap'><text>忘记密码</text></view>
+  </view>
+</view>

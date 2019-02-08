@@ -1,0 +1,42 @@
+<!--pages/userCenter/userCenter.wxml-->
+<view class="userinfo">
+  <!-- <image class="userinfo-avatar" src="../../static/images/logo.png"></image> -->
+  <open-data type='userAvatarUrl' ></open-data>
+</view>
+<view class="userinfo-userdata">
+  <text>{{userInfo.nickName}}</text>
+  <text style="margin-left:30rpx;">{{userInfo.deptName}}</text>
+</view>
+<view class="userinfo-userdata">
+  <text>账号:  {{userInfo.phoneNumber}}</text>
+</view>
+
+<view style="margin-top:50rpx">
+  <navigator class="tool" 
+  url="../changePassword/changePassword" hover-class="navigator-hover">
+    <view style="display:flex;align-items:center;">
+      <image class="image" src="../../static/images/uc-password.png"></image>
+      <text>修改密码</text>
+    </view>
+    <image class="image2" src="../../static/images/uc-next.png"></image>
+  </navigator>
+
+
+  <navigator class="tool" 
+  url="../userInfo/userInfo" hover-class="navigator-hover">
+    <view style="display:flex;align-items:center;">
+      <image class="image" src="../../static/images/uc-userinfo.png"></image>
+      <text>个人信息</text>
+    </view>
+    <image class="image2" src="../../static/images/uc-next.png"></image>
+  </navigator>
+
+  <view class="tool" bindtap="exitTap" hover-class="navigator-hover">
+    <view style="display:flex;align-items:center;">
+      <image class="image" src="../../static/images/uc-loginout.png"></image>
+      <text>退出登录</text>
+    </view>
+    <image class="image2" src="../../static/images/uc-next.png"></image>
+  </view>
+
+</view>

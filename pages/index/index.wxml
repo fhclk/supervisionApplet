@@ -1,0 +1,28 @@
+<!--index.wxml-->
+
+
+<view class="container">
+
+  <block wx:if="{{!hasTaped}}">
+    <view class='logo-view'>
+      <image src="../../static/images/logo.png"></image>
+      <text>评测评议</text>
+    </view>
+
+    <view class='select-btn-view' bindtap='selectSystemTap'>
+      <view></view>
+      <text>请选择使用的系统</text>
+      <view>
+        <image src='../../static/images/rightArrow.png' class='rightArrow'></image>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <include src="../../lib/wxSearchView/wxSearchView.wxml" />
+  </block>
+
+  <!-- <view class="introduceinfo">
+    <text>abcdsss</text>
+  </view> -->
+
+</view>

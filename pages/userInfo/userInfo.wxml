@@ -1,0 +1,26 @@
+<form bindsubmit="formSubmit">
+  <view class="name">
+    <view style="display:flex;align-items:center;">姓名</view>
+    <input name="name" class="form-input" placeholder="请输入姓名" value='{{userInfo.name}}'/>
+  </view>
+  <!-- <view class="name">
+    <view style="display:flex;align-items:center;">年龄</view>
+    <input name="age" type="number" class="form-input" placeholder="请输入年龄"/>
+  </view> -->
+  <view class="name">
+    <view style="display:flex;align-items:center;">性别</view>
+    <input name="gender" class="form-input" placeholder="请输入性别" value='{{userInfo.sex}}'/>
+  </view>
+  <view class="name">
+    <view style="display:flex;align-items:center;">电话</view>
+    <input name="phone" type="number" class="form-input" placeholder="请输入电话" value='{{userInfo.phoneNumber}}'/>
+  </view>
+  <view class="name">
+    <view style="display:flex;align-items:center;">邮箱</view>
+    <input name="email" class="form-input" placeholder="请输入邮箱" value='{{userInfo.email}}'/>
+  </view>
+  <view>
+    <button form-type="submit" class="submit" 
+    hover-class="other-button-hover">提交</button>
+  </view>
+</form>
